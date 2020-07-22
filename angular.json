@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scandit-angular-demo"
+    }
+  },
+  "defaultProject": "scandit-angular-demo",
+  "cli": {
+    "analytics": false
+  }
 }

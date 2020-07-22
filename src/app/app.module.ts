@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScanditSdkModule } from 'scandit-sdk-angular';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -10,8 +12,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScanditSdkModule.forRoot(environment.scanditLicense, {
+          engineLocation: 'assets/',
+          preloadBlurryRecognition: false,
+          preloadEngine: false
+      })
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
