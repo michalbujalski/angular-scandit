@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Scandit licnese
+
+To add a license key update `src/enviroments/enviroment.ts` and `src/enviroments/enviroment.prod.ts` following entry:
+
+```
+export const environment = {
+  production: true,
+  scanditLicense: `<your_licens>`
+};
+```
